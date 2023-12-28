@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body2">
+    <header class="header">
+
+        <a href="#" class="logo">Ali</a>
+        <nav class="navbar">
+            
+            <a href="index.html" class="active">Home</a>
+            <a href="aboutMe.html">About Me</a>
+            <a href="#">Accomplishments</a>
+            <a href="activities.html">Activities</a>
+            <a href="growth.html">Personal Growth</a>
+            <a href="#">Career Path</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div>
+            <img src="WhatsApp Image 2023-12-23 at 11.19.41 PM.jpeg" alt="" height="500px" width="500px" id="img1">
+            <img src="WhatsApp Image 2023-12-23 at 1.03.11 PM.jpeg" alt="swimming" height="500px" width="500px" id="img1" class="img2">
+            <img src="WhatsApp Image 2023-12-23 at 1.03.49 PM.jpeg" alt="football" height="500px" width="500px" id="img1" class="img3">
+        </div>
+
+      
+        <div class="aboutDiv">
+            <h1 class="me">About Me</h1>
+            <br>
+            <h3 id="who">Who am I?</h3>
+            <p id="whoP">I am a confidant person with a strong personality .I like many things especially exploring , serching , learning many new things , reading and playing . I have many goals in life not one or two but many goals that I want to achieve   by detrmination and will , by never giving up, by patient .</p>
+
+            <br>
+            
+
+            <table id="aboutTable" border="1px">
+
+                <tr>
+                    <th>Date of birth</th>
+                    <th>Lives in</th>
+                    <th>Grade level</th>
+                    <th>School </th>
+                    <th>Hobbies </th>
+                </tr>
+
+                <tr>
+                    <td>10-2-2007</td>
+                    <td>Saksakyeh South Lebanon</td>
+                    <td>Grade 11 Scientific</td>
+                    <td>Sarafand Public High School</td>
+                    <td>I like many different kinds of sports like basket ball , vollyball and hand ball but <span id="imp" class="foot">football</span> has different taste.It's my life.
+
+                       <span id="imp" class="swim">Swimming and fishing</span>  are my favorites. I enjoy them.</td>
+                </tr>
+            </table>
+       
+
+           
+      
+    </main>
+
+    <footer>
+      <p>
+        <a href="mailto:alihdr2007@gmail.com">Emails: &nbsp;&nbsp; alihdr2007@gmail.com</a> &nbsp;&nbsp;
+        <a href="mailto:Ali.Haidar@teachforlebanon.org">Ali.Haidar@teachforlebanon.org</a> <br> <br>
+        <a href="tel:03170402">Phone Number: &nbsp; 03170402</a>
+      </p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var img1 = document.getElementById("img1");
+            var img2 = document.querySelector(".img2");
+            var img3 = document.querySelector(".img3");
+        
+            // Function to show a specific image and hide others
+            function showImage(imgToShow) {
+                img1.style.display = "none";
+                img2.style.display = "none";
+                img3.style.display = "none";
+                imgToShow.style.display = "block";
+            }
+        
+            // Click event for the "foot" span
+            document.querySelector(".foot").addEventListener("click", function() {
+                showImage(img3);
+            });
+        
+            // Click event for the "swim" span
+            document.querySelector(".swim").addEventListener("click", function() {
+                showImage(img2);
+            });
+
+            document.querySelector(".me").addEventListener("click", function() {
+                showImage(img1);
+            });
+        });
+        </script>
+        
+</body>
+</html>
